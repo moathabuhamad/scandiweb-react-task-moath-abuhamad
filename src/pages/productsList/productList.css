@@ -1,0 +1,40 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.ItemCat {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 160%;
+  padding: 0 7%;
+}
+
+.ItemList {
+  display: grid;
+  width: 100%;
+  padding: 0 15px;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media screen and (min-width: 425px) {
+  .Container {
+    gap: 80px;
+  }
+  .ItemList {
+    padding: 0 7%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .ItemList {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px 40px;
+  }
+}

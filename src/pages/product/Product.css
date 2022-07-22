@@ -1,0 +1,193 @@
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  padding-top: 160px;
+  gap: 100px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.ImgContainer {
+  display: flex;
+  height: 54vh;
+  gap: 40px;
+  flex-direction: column;
+}
+
+.Image {
+  object-fit: contain;
+  width: 80vw;
+  height: 40vh;
+}
+
+@media screen and (min-width: 768px) {
+  .Wrapper {
+    flex-direction: row;
+  }
+  .ImgContainer {
+    flex-direction: row;
+  }
+  .Image {
+    width: 42vw;
+    height: 511px;
+  }
+}
+.SmallImage {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.SmallImage:hover {
+  border: 2px var(--c-black) solid;
+}
+
+.ImgList {
+  display: flex;
+  gap: 40px;
+  flex-direction: row;
+  width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  .ImgList {
+    flex-direction: column;
+    width: 80px;
+  }
+}
+
+.InfoContainer {
+  width: 20vw;
+  padding: 10px;
+}
+
+.Brand {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 27px;
+  color: var(--c-black);
+  margin-bottom: 16px;
+}
+
+.Name {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 27px;
+  color: var(--c-black);
+  margin-bottom: 43px;
+}
+
+.Desc {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.PriceContainer {
+  width: 100%;
+  margin: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Price {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 46px;
+}
+
+.attContainer {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.OptionContainer {
+  width: 100%;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.Option {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.OptionTitle {
+  font-family: "Roboto Condensed";
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.text {
+  width: 63px;
+  height: 45px;
+  margin-right: 12px;
+  cursor: pointer;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  border: 1.5px solid var(--c-black);
+  transition: all 0.2s ease;
+}
+
+.text:hover {
+  width: 73px;
+  transform-origin: left;
+  transition: all 0.2s ease;
+}
+
+.swatch {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.swatch:hover {
+  outline: var(--c-primary) 2px solid;
+}
+
+.Button {
+  padding: 16px;
+  margin: 20px 0 40px 00px;
+  width: 100%;
+  color: white;
+  background-color: var(--c-primary);
+  cursor: pointer;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Button:hover {
+  opacity: 0.9;
+}
